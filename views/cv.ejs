@@ -54,7 +54,7 @@
 			}
 
 			a {
-				color: #999;
+				color: #131517;
 				text-decoration: none;
 			}
 
@@ -79,6 +79,8 @@
 			.skils_list li {
 				padding: 0;
 				font-size: 14px;
+				display: flex;
+				justify-content: space-between;
 			} 
 
 			section {
@@ -89,6 +91,56 @@
 				color: #999;
 				font-size: 12px;
 			}
+
+			.rating {
+				margin-top: 2px;
+				margin-right: 1em;
+				padding: 0;
+				display: flex;
+			}
+
+			.rating li {
+				border: solid 1px #999;
+				margin: 5px;
+				list-style: none;
+				height: 5px;
+				width: 5px;
+				border-radius: 50%;
+				position: relative;
+				overflow: hidden;
+				background: white;
+			}
+
+			.rating::before {
+				content: "";
+				position: absolute;
+				width: 75px;
+				border-bottom: solid 3px #999;
+				margin-top: 7px;
+				z-index: 0;
+				margin-left: 5px;
+			}
+
+			.rating.note-1 li:nth-child(1) { background: #999; }
+
+			.rating.note-2 li:nth-child(1) { background: #999; }
+			.rating.note-2 li:nth-child(2) { background: #999; }
+
+			.rating.note-3 li:nth-child(1) { background: #999; }
+			.rating.note-3 li:nth-child(2) { background: #999; }
+			.rating.note-3 li:nth-child(3) { background: #999; }
+
+			.rating.note-4 li:nth-child(1) { background: #999; }
+			.rating.note-4 li:nth-child(2) { background: #999; }
+			.rating.note-4 li:nth-child(3) { background: #999; }
+			.rating.note-4 li:nth-child(4) { background: #999; }
+
+			.rating.note-5 li:nth-child(1) { background: #999; }
+			.rating.note-5 li:nth-child(2) { background: #999; }
+			.rating.note-5 li:nth-child(3) { background: #999; }
+			.rating.note-5 li:nth-child(4) { background: #999; }
+			.rating.note-5 li:nth-child(5) { background: #999; }*/
+
 
 		</style>
 
@@ -154,13 +206,55 @@
 					<section>
 						<h2>Skills</h2>
 						<ul class="skils_list">
-							<li>Javscript/Node.js/Jquery</li>
-							<li>SASS SCSS & HTML</li>
-							<li>MongoDB/MySql</li>
-							<li>PHP</li>
-							<li>SVN Source Control</li>
-							<li>GIT</li>
-							<li>ASP.NET</li>
+							<li>Javscript/Node.js/Jquery
+								<ul class="rating note-5">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</li>
+							<li>
+								CSS & HTML
+								<ul class="rating note-5">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</li>
+							<li>
+								GIT
+								<ul class="rating note-4">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</li>
+							<li>
+								SASS & SCSS
+								<ul class="rating note-5">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</li>
+							<li>
+								PHP
+								<ul class="rating note-3">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</li>
 						</ul>
 
 						<small>
