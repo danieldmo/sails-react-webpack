@@ -1,12 +1,14 @@
 module.exports = {
   index: function (req, res) {
 
-    var bundle;
+    return res.view('cv');
 
-    if (sails.config.environment !== 'development') {
-      bundle = require('../../assets.json').main.js;
-    }
+    // var bundle;
 
-    return res.view('index', { bundle });
+    // if (sails.config.environment !== 'development') {
+    //   bundle = require('../../assets.json').main.js;
+    // }
+
+    // return res.view('index', { bundle });
   },
 };
