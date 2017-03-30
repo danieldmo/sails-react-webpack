@@ -55,6 +55,12 @@ ___
 * [karma & Jasmine](http://www.thinksincode.com/2016/07/07/karma-jasmine-webpack.html).
 * [Enzyme docs](http://airbnb.io/enzyme/docs/api/)
 
+You need `karma-cli` installed globally
+
+```bash
+$ npm install -g karma-cli
+```
+
 To watch the files and test files
 ``` bash
 $ karma start
