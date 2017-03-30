@@ -23,7 +23,6 @@ git clone https://github.com/markmur/sails-react-webpack.git
 cd sails-react-webpack
 npm install
 ```
-
 ___
 
 ### Run (development)
@@ -50,3 +49,20 @@ sails lift --prod
 You can also manually run webpack with `npm run dist`.
 
 ___
+
+### Run FrontEnd Tests
+
+* [karma & Jasmine](http://www.thinksincode.com/2016/07/07/karma-jasmine-webpack.html).
+* [Enzyme docs](http://airbnb.io/enzyme/docs/api/)
+
+To watch the files and test files
+``` bash
+$ karma start
+```
+
+To run once
+``` bash
+$ npm run test:ui
+```
+
+You can play around with the Karma configuration at `karma.conf.js`.

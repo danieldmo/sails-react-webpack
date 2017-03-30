@@ -40,8 +40,12 @@
     "debug": "node debug app",
     "dev": "webpack-dev-server --hot --inline",
     "dist": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
-    "postinstall": "npm run dist"
+    "postinstall": "npm run dist",
+    "test:ui": "karma start --no-auto-watch --single-run"
   },
+  "pre-push": [
+    "test:ui"
+  ],
   "main": "app.js",
   "repository": {
     "type": "git",
