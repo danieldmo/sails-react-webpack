@@ -50,7 +50,7 @@ You can also manually run webpack with `npm run dist`.
 
 ___
 
-### Run FrontEnd Tests
+### Frontend tests
 
 * [karma & Jasmine](http://www.thinksincode.com/2016/07/07/karma-jasmine-webpack.html).
 * [Enzyme docs](http://airbnb.io/enzyme/docs/api/)
