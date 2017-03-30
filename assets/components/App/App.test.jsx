@@ -1,15 +1,13 @@
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import TextArea from './App.jsx';
+import App from 'App/App';
 import React from 'React';
 
 describe('<App />', () => {
 
-  var wrapper;
-
   // simple render
   it('should render <App />', () => {
-    wrapper = shallow(<App />);
+    var wrapper = shallow(<App />);
     expect(wrapper.find('.app'))
       .to.exist.and.have.length(1);
   });

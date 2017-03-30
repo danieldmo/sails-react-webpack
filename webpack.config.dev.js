@@ -43,6 +43,13 @@ module.exports = {
     }),
   ],
 
+  externals: {
+    'cheerio': 'window',
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
+  },
+
   module: {
     loaders: [
       {
@@ -50,17 +57,20 @@ module.exports = {
         loader: 'style!css!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded',
       },
       {
+        test: /\.css$/,
+        loader: "style!css"
+      },
+      {
         test: /\.(ttf|eot|svg|woff)(\?[a-z0-9]+)?$/, // fonts files
         loader: 'file-loader?name=[path][name].[ext]',
       },
       {
-        test: /\.jsx?$/, // react files
+        test: /\.(jsx)?$/, // react files
         exclude: /node_modules/,
-        loaders: ['react-hot', 'babel?presets[]=es2015,presets[]=stage-0,presets[]=react'],
+        loaders: ['react-hot-loader', 'babel?presets[]=es2015,presets[]=stage-0,presets[]=react'],
         include: path.join(__dirname, 'assets'),
       },
     ],
-
     noParse: /\.min\.js/,
   },
 };
