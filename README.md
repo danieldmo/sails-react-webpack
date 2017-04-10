@@ -72,3 +72,25 @@ $ npm run test:ui
 ```
 
 You can play around with the Karma configuration at `karma.conf.js`.
+
+### Unit Tests
+
+* [Mocha & Istanbul](https://coderwall.com/p/x6jfwg/running-istanbul-code-coverage-with-mocha)
+* [Supertest](https://github.com/visionmedia/supertest)
+
+Runs mocha_istanbul with Grunt.
+
+To run
+``` bash
+$ npm test
+```
+
+behind the npm scenes it simply runs
+``` bash
+$ grunt test
+```
+
+### Pre-Push
+Tests run with [pre-push](https://www.npmjs.com/package/pre-push) every time you try to push any code. 
+
+Note that Sails cannot be lifted for the Unit Tests to run successfully.
