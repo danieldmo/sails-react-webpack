@@ -12,8 +12,10 @@ A boilerplate for [Sails](http://sailsjs.org) apps with a [React](https://facebo
 * [Sass](https://github.com/jtangelder/sass-loader)
 * [Autoprefixer](https://github.com/passy/autoprefixer-loader)
 * [React Hot Loader](https://github.com/gaearon/react-hot-loader)
-
-
+* [Karma](https://github.com/karma-runner/karma)
+* [Mocha](https://github.com/mochajs/mocha)
+* [Mocha-Istanbul](https://github.com/arikon/mocha-istanbul)
+* [Enzyme](https://github.com/airbnb/enzyme)
 ___
 
 ### Clone
