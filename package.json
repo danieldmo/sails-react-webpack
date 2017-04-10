@@ -41,10 +41,12 @@
     "dev": "webpack-dev-server --hot --inline",
     "dist": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
     "postinstall": "npm run dist",
-    "test:ui": "karma start --no-auto-watch --single-run"
+    "test:ui": "karma start --no-auto-watch --single-run",
+    "test": "grunt test"
   },
   "pre-push": [
-    "test:ui"
+    "test:ui",
+    "test"
   ],
   "main": "app.js",
   "repository": {
@@ -67,6 +69,7 @@
     "clean-webpack-plugin": "^0.1.9",
     "css-loader": "^0.23.1",
     "enzyme": "^2.8.0",
+    "grunt-mocha-istanbul": "^5.0.2",
     "jasmine-core": "^2.5.2",
     "karma": "^1.5.0",
     "karma-chrome-launcher": "^2.0.0",
