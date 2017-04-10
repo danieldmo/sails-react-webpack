@@ -2,6 +2,7 @@ config/local.js
 
 ## tests coverage
 coverage/
+coverage-api/
 node_modules
 .tmp
 assets.json
